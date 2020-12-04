@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Filmes API - LGSS</title>
+    <link rel="stylesheet" href="estilos.css"> 
+    <link rel="stylesheet" href="files/lightslider.css">
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <!---Icone-->
+    <link rel="shortcut icon" href="https://source.unsplash.com/random">
+    <!--Font Awesomee-->
+    <script src="https://kit.fontawesome.com/c41cbc8f8c.js" crossorigin="anonymous"></script>
+    <script src="teste.js"></script>
+</head>
+
+<body>
+    <!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="#" class="logo">
+            <img src="https://source.unsplash.com/random/"/>
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Séries de TV</a></li>
+            <li><a href="#">Suspence</a></li>
+            <li><a href="#">Sobre nós</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input type="text" id="txtPesquisa" placeholder="Pesquisar"/>
+            <!--search-icon----------->
+            <i class="fas fa-search" id="btn_Pesquisar"></i>
+        </div>
+    </nav>
+    
+    <!--latest-movies---------------------->
+    <section class="card-grop" id="latest">
+        <h2 class="latest-heading">Lançamentos</h2>
+        <!--slider------------------->
+        <ul id="lateste_list" class="cs-hidden">
+         
+          </ul>
+    </section>
+    <!--movies---------------------------->
+    <div class="movies-heading">
+        <h2>Outros Filmes</h2>
+    </div>
+    <section id="movies-list">
+        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=1">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+         <!--box-2------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=2">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+         <!--box-3------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=3">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+         <!--box-4------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=4">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+         <!--box-5------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=5">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+         <!--box-6------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=6">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+         <!--box-7------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=7">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+         <!--box-8------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="https://source.unsplash.com/random/sig=8">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Up (2009) - Inglês (Legendas em Português) - HD
+            </a>
+        </div>
+    </section>
+    
+<!--btns--------------->
+    <div class="btns">
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+    </div>
+    <!--footer------------------>
+    <footer>
+        <p> Copyright 2020 - DIW - <b>Luiz Gustavo Santos Soares</b></p>
+    <script>    $(document).ready(function() {
+        $('#autoWidth,#lateste_list').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth,#lateste_list').removeClass('cS-hidden');
+            } 
+        });  
+      });</script>
+</body>
+</html>
