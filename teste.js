@@ -1,6 +1,6 @@
 const TMDB_ENDPOINT_BASE = 'https://api.themoviedb.org/3';
 function searchSubmit(event) {
-    window.location.href = "pesquisa.html?filme=" + document.getElementById('txtPesquisa').value;
+    window.location.href = "https://www.themoviedb.org/search?language=pt-BR&query=" + document.getElementById('txtPesquisa').value;
     return false;
 }
 

@@ -10,11 +10,11 @@
         useCSS: true,
         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
         easing: 'linear', //'for jquery animation',//
-        speed: 400, //ms'
+        speed: 1000, //ms'
         auto: true,
-        pauseOnHover: false,
+        pauseOnHover: true,
         loop: false,
-        slideEndAnimation: true,
+        slideEndAnimation: false,
         pause: 2000,
         keyPress: false,
         controls: true,
@@ -31,7 +31,7 @@
         galleryMargin: 5,
         thumbMargin: 5,
         currentPagerPosition: 'middle',
-        enableTouch: true,
+        enableTouch: false,
         enableDrag: true,
         freeMove: true,
         swipeThreshold: 40,
@@ -39,10 +39,10 @@
         /* jshint ignore:start */
         onBeforeStart: function ($el) {},
         onSliderLoad: function ($el) {},
-        onBeforeSlide: function ($el, scene) {},
-        onAfterSlide: function ($el, scene) {},
-        onBeforeNextSlide: function ($el, scene) {},
-        onBeforePrevSlide: function ($el, scene) {}
+        onBeforeSlide: function ($el) {},
+        onAfterSlide: function ($el) {},
+        onBeforeNextSlide: function ($el) {},
+        onBeforePrevSlide: function ($el) {}
         /* jshint ignore:end */
     };
     $.fn.lightSlider = function (options) {
